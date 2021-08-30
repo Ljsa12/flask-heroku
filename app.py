@@ -25,9 +25,9 @@ data = [
 def hello():
     return "Hello Flask-Herok"
 
-@app.route('/api', methods=['GET'])
-def get_api():
-    return jsonify(data)
+@app.route('/hello/<string:name>')
+def hello1():
+    return "สวัสดี"
 
 if __name__ == "__main__":
-    app.run(debug=False)
+    app.run(debug=True)
