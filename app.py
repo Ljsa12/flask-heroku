@@ -22,11 +22,11 @@ data = [
     ]
 
 @app.route('/')
-def hello():
+def hello1():
     return "Hello นางสาววันวิสา เพ้ชรรัตน์ เลขที่ 24 ชั้น ม.4/9"
 
 @app.route('/api', methods=['GET'])
-def get_api():
+def hello():
     return jsonify(data)
 
 @app.route('/hi')
